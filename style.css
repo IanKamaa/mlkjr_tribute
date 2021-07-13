@@ -4,7 +4,7 @@ html{
 }
 body{
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: auto;
     margin: auto;
     background: linear-gradient(
       45deg,
@@ -15,6 +15,7 @@ body{
 }
 main{
     text-align: center;
+    word-spacing: inherit;
 }
 a{
     color:rgb(78, 89, 78);
@@ -53,15 +54,20 @@ hr{
     'Helvetica Neue', Arial, sans-serif;
     text-decoration-style: wavy;
 }
-ul#otis{
-    list-style-type: none;
+
+
+ul{
+    padding: 5%;
+    display: inline-block;
+    
+    
 }
 
 li{
     background: rgb(177, 177, 177);
     color: rgb(28, 28, 28);
-    margin: 10px 100px 0px 60px;
-    padding: 20px 50px 20px 50px;
+    margin: 1%;
+    padding: 5%;
     font-size: 1.2rem;
     text-align: justify;
     text-decoration-style: none;
@@ -69,19 +75,25 @@ li{
     border-radius: 4px;
     list-style-type: none;
     display: inline-block;
+    word-spacing: inherit;
+    float: none;
 }
 li:hover{
 
     transition-duration: 0.7s;
     background: black;
     color: rgb(255, 255, 255);
+    font-style: italic;
 }
 
 
 blockquote{
-    padding: 50px;
+    padding: 20px;
     font-style:italic;
     font-size: large;
+    text-align:justify;
+    display: inline-block;
+    word-spacing: inherit;
 }
 
 blockquote p{
@@ -113,6 +125,33 @@ footer {
         content: attr(data-src-800px, url);
     }
 }
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} } 
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    li {
+      font-size:  18pxpx;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    li {
+      font-size: 15px;
+      word-spacing: 0.02rem;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    blockquote {
+      font-size:  18px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    blockquote {
+      font-size: 15px;
+      word-spacing: 0.02rem;
+    }
+  }
