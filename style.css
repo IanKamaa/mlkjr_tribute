@@ -1,0 +1,100 @@
+body{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+    background: linear-gradient(
+      45deg,
+      rgb(4, 38, 22),
+      rgb(0, 0, 0),
+      rgb(0, 19, 3)
+    );
+}
+main{
+    text-align: center;
+}
+a{
+    color:rgb(78, 89, 78);
+    text-decoration: none;
+}
+a:hover {
+    color:rgb(0, 255, 136);
+}
+hr{
+    color: rgb(31, 30, 30);
+}
+#title{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#img-div {
+    background: rgb(226, 226, 226);
+    padding: 10px;
+    margin: 5px;
+    color: darkslategrey;
+  }
+  
+#image{
+    width: 100%;
+    height: auto;
+    padding: auto;
+    position: center;
+    max-width: 860px;
+}
+#img-caption{
+    margin: auto;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+    text-decoration-style: wavy;
+}
+ul#otis{
+    list-style-type: none;
+}
+
+li{
+    background: rgb(177, 177, 177);
+    color: rgb(28, 28, 28);
+    margin: 10px 100px 0px 60px;
+    padding: 20px 50px 20px 50px;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-decoration-style: none;
+    
+    border-radius: 4px;
+    list-style-type: none;
+}
+li:hover{
+
+    transition-duration: 0.7s;
+    background: black;
+    color: rgb(255, 255, 255);
+}
+
+
+blockquote{
+    padding: 50px;
+    font-style:italic;
+    font-size: large;
+}
+
+blockquote p{
+    float: right;
+
+}
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+  }
