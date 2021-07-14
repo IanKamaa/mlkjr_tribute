@@ -1,0 +1,1 @@
+This is just a simple tribute page i made for Martin Luther King jr. Hopefully, I'll improve it in future and add more functionality and features to it.
